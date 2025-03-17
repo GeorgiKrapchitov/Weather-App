@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>Modern Weather App</h1>
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="location-selector">
+            <select id="country-select" class="select-box">
+                <option value="">Select Country</option>
+            </select>
+            <select id="city-select" class="select-box">
+                <option value="">Select City</option>
+            </select>
+        </div>
+
+        <div class="weather-container">
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img id="current-weather-icon" src="" alt="Weather icon">
+                    </div>
+                    <div class="weather-details">
+                        <div class="temperature">
+                            <span id="current-temp">--</span>°C
+                        </div>
+                        <div class="description" id="weather-description">Select a city to see weather</div>
+                        <p class="humidity">Humidity: <span id="humidity"></span>%</p>
+                        <p class="wind">Wind: <span id="wind-speed"></span> km/h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
